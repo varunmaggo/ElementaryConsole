@@ -7,9 +7,41 @@ namespace ElementaryConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            ReverseString("OmegaEpisode");
 
+            CheckPallindrome("Madam");
+            //CheckPallindrome("Superman");
+
+            //ReverseString("OmegaEpisode");
             Console.ReadLine();
+        }
+
+        static void CheckPallindrome(string myString)
+        {
+            bool flag = false;
+
+            for (int i = 0, j = myString.Length - 1;
+                i < myString.Length / 2; 
+                i++, j--)
+            {
+                if (myString[i] != myString[j])
+                {
+                    flag = false;
+                    break;
+                }
+                else
+                {
+                    flag = true;
+                }
+            }
+
+            if (flag)
+            {
+                Console.WriteLine(myString + " - Pallindrome");
+            }
+            else
+            {
+                Console.WriteLine(myString + " - Not Pallindrome"); 
+            }
         }
 
         static void ReverseString(string myString)
