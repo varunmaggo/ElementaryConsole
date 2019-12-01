@@ -8,7 +8,7 @@ namespace ElementaryConsole
         {
             Console.WriteLine("Hello World!");
 
-            CheckPallindrome("Madam");
+            CheckPallindrome("madam");
             //CheckPallindrome("Superman");
 
             //ReverseString("OmegaEpisode");
